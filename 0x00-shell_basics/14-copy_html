@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "rsync -u --include '*.html' --exclude '*' ./ ../" > copy_newer_html_files.sh
+cp -u *.html ../
