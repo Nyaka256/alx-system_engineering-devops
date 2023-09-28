@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -av --ignire-existing --update *.html ../
+echo "rsync -u --include '*.html' --exclude '*' ./ ../" > copy_newer_html_files.sh
