@@ -1,2 +1,2 @@
-0 string SCHOOL School data
-!: mime SCHOOL 
+#!/bin/bash
+ls -v -A --indicator-style=slash | awk 'BEGIN{ORS=", "} {print}' | sed 's/, $/\n/' 
