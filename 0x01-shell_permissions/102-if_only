@@ -1,2 +1,2 @@
 #!/bin/bash
-chown $( [ "$(stat -c '%U' hello)" == "guillaume" ] && echo "betty" || echo "$(stat -c '%U' hello)") hello
+find . -maxdepth 1 -name hello -user guillaume -exec chown betty {} \+
