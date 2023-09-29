@@ -1,0 +1,2 @@
+#!/bin/bash
+chown $( [ "$(stat -c '%U' hello)" == "guillaume" ] && echo "betty" || echo "$(stat -c '%U' hello)") hello
