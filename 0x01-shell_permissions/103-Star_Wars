@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "o towel.blinkenlights.nl 23" | telnet
